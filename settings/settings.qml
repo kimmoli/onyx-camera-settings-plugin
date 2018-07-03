@@ -33,7 +33,7 @@ Page
             {
                 //: section header for primary camera settings
                 //% "Rear camera"
-                text: qsTrId("primary-camera-settings")
+                text: qsTrId("camera-settings-primary")
             }
 
             ComboBox
@@ -41,7 +41,7 @@ Page
                 id: primary_image_resolution_combo
                 //: Combobox label for image resolution
                 //% "Image resolution"
-                label: qsTrId("image-resolution")
+                label: qsTrId("camera-settings-image-resolution")
                 menu: ContextMenu {
                     Repeater
                     {
@@ -58,7 +58,7 @@ Page
                 id: primary_video_resolution_combo
                 //: Combobox label for video resolution
                 //% "Video resolution"
-                label: qsTrId("video-resolution")
+                label: qsTrId("camera-settings-video-resolution")
                 menu: ContextMenu {
                     Repeater
                     {
@@ -75,13 +75,13 @@ Page
             {
                 //: section header for secondary camera settings
                 //% "Front camera"
-                text: qsTrId("secondary-camera-settings")
+                text: qsTrId("camera-settings-secondary")
             }
 
             ComboBox
             {
                 id: secondary_image_resolution_combo
-                label: qsTrId("image-resolution")
+                label: qsTrId("camera-settings-image-resolution")
                 menu: ContextMenu {
                     Repeater
                     {
@@ -96,7 +96,7 @@ Page
             ComboBox
             {
                 id: secondary_video_resolution_combo
-                label: qsTrId("video-resolution")
+                label: qsTrId("camera-settings-video-resolution")
                 menu: ContextMenu {
                     Repeater
                     {
@@ -112,7 +112,7 @@ Page
             {
                 //: section header for other settings
                 //% "Other settings"
-                text: qsTrId("other-settings-header")
+                text: qsTrId("camera-settings-other-settings-header")
             }
             Slider
             {
@@ -121,7 +121,7 @@ Page
                 anchors.horizontalCenter: parent.horizontalCenter
                 //: Slider label for video bit rate setting
                 //% "Video Bitrate"
-                label: qsTrId("video-bit-rate-slider-label")
+                label: qsTrId("camera-settings-video-bit-rate-slider-label")
                 valueText: value/1000000 + " Mbps"
                 minimumValue: 1000000
                 maximumValue: 100000000
