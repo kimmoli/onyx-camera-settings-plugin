@@ -10,6 +10,7 @@ translations.path = /usr/share/translations
 translations.files = i18n/*.qm
 
 system(lupdate . -ts $$PWD/i18n/camera-settings_eng_en.ts)
+system(lupdate . -ts $$PWD/i18n/camera-settings_zh_CN.ts)
 system(lrelease -idbased $$PWD/i18n/*.ts)
 
 OTHER_FILES += \
